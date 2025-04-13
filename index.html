@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lionah Rivera | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-image: url('https://instagram.fmnl4-4.fna.fbcdn.net/v/t1.15752-9/490988648_724606053854503_4338286765429116917_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=0024fc&_nc_ohc=mawy6it2n0cQ7kNvwEYo-P5&_nc_oc=AdkAAZHEDqblS8sR7mmTH1Ae68CxaiTpsNumleC2a0bsDB3zyYSTfxKfZlT-OPHq7An_T4McgqMup0aZVe6PxFD8&_nc_zt=23&_nc_ht=instagram.fmnl4-4.fna&oh=03_Q7cD2AGEg1x0ixps882Zj1D4f6Ps9FG3m-zE-mDSuunRMLHnEw&oe=6822CF34');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+    overflow-x: hidden;
+    transition: all 0.5s ease;
+}
+        .container {
+            width: 80%;
+            margin: auto;
+            max-width: 1200px;
+        }
+ .about-container {
+  background-color: rgba(75, 0, 130, 0.6); /* Medium Purple with 60% opacity */
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 600px;
+  margin: 20px auto;
+  color: #fff; /* Ensures text is visible against the background */
+}
+
+        .card {
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(30, 144, 255, 0.4);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+         transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(30, 144, 255, 0.😎, 0 0 35px rgba(30, 144, 255, 0.5);
+        }
+
+
+        header {
+            background-image: url('header-background.jpg');
+            background-size: cover;
+            color: mediumpurple;
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+            margin-bottom: 60px;
+            border-bottom: 5px solid #4682b4;
+        }
+
+        header h1 {
+            font-size: 4.5em;
+            margin-bottom: 10px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            animation: fadeIn 1s ease-in-out;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        header p {
+            font-size: 1.5em;
+            letter-spacing: 1px;
+            margin-top: 10px;
+            font-weight: 300;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        #profile {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: -120px;
+            margin-bottom: 50px;
+            background-image: url('images.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 0;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .profile-image {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 5px solid #fff;
+        box-shadow: 0 0 25px rgba(128, 0, 128, 0.9), 0 0 40px rgba(128, 0, 128, 0.6);
+}
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+        animation: fadeIn 2s ease-in-out;
+        margin-right: 30px;
+        }
+
+        .profile-image:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 25px rgba(128, 0, 128, 0.9), 0 0 40px rgba(128, 0, 128, 0.6);
+}
+        } 
+.profile-image {
+    width: 100%;
+    max-width: 300px; /* Adjust as needed */
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+    
+        }
+
+        .profile-info {
+            max-width: 600px;
+            background-color:purple
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .profile-info h2 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #1e90ff;
+        }
+
+        .profile-info p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #b0e0e6;
+        }
+
+        section {
+            padding: 80px 0;
+            position: relative;
+            margin-bottom: 60px;
+            background: rgba(0, 0, 139, 0.3);
+            border-radius: 10px;
+            box-shadow: 0 15px 30px rgba(0, 0, 139, 0.4);
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 3.5em;
+            margin-bottom: 30px;
+            color: #1e90ff;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            position: relative;
+            animation: fadeInUp 1s ease-in-out;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        section p {
+            text-align: center;
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-top: 20px;
+            color: #b0e0e6;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        ul li {
+            background-color: #4682b4;
+            color: #fff;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 25px;
+            font-size: 1.2em;
+            box-shadow: 0 4px 8px rgba(0, 0, 139, 0.1);
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            position: relative;
+        }
+
+        ul li:hover {
+            background-color: #5f9ea0;
+            transform: scale(1.1);
+        }
+
+        .project {
+            background-color: rgba(0, 0, 139, 0.1);
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0, 0, 139, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 25px 55px rgba(0, 0, 139, 0.3);
+        }
+
+        .project h3 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #1e90ff;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 139, 0.3);
+        }
+
+        .project p {
+            font-size: 1.1em;
+            color: #b0e0e6;
+            margin-bottom: 15px;
+        }
+
+        .project a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+            padding: 12px 20px;
+            background-color: #4682b4;
+            color: white;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .project a:hover {
+            background-color: #5f9ea0;
+            transform: scale(1.05);
+        }
+
+        .project-image {
+            width: 100%;
+            height: 250px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .project:hover .project-image {
+            transform: scale(1.05);
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        #contact {
+            background-color: purple
+            color: #fff;
+            padding: 60px 0;
+            text-align: center;
+            border-top: 5px solid #4682b4;
+            box-shadow: 0 10px 30px rgba(0, 0, 139, 0.5);
+        }
+
+        #contact p {
+            font-size: 1.2em;
+            margin-top: 20px;
+            line-height: 1.8;
+            color: #b0e0e6;
+        }
+
+        #contact form {
+            margin-top: 30px;
+        }
+
+        #contact input,
+        #contact textarea {
+            width: 100%;
+            max-width: 500px;
+            padding: 15px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 3px 6px rgba(0, 0, 139, 0.1);
+        }
+
+        #contact button {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4682b4;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #contact button:hover {
+            background-color: #5f9ea0;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            font-size: 1.5em;
+            color: #fff;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #4682b4;
+        }
+
+        footer {
+            background-color: #222;
+            color: #bbb;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 60px;
+        }
+
+        footer p {
+            font-size: 1em;
+        }
+
+        .about-section {
+    padding: 40px;
+    background: #f4f4f9;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(30, 144, 255, 0.3);
+    transition: box-shadow 0.3s ease;
+}
+
+.about-section:hover {
+    box-shadow: 0 0 40px rgba(30, 144, 255, 0.7), 0 0 50px rgba(30, 144, 255, 0.4);
+}
+
+.footer {
+    padding: 30px;
+    background-color: #222;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(30, 144, 255, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.footer:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(30, 144, 255, 0.9), 0 0 40px rgba(30, 144, 255, 0.5);
+}
+
+.button {
+    padding: 15px 30px;
+    background-color: #1e90ff;
+    color: white;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0 0 20px rgba(30, 144, 255, 0.4);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    border: none;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(30, 144, 255, 0.7), 0 0 50px rgba(30, 144, 255, 0.4);
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Portfolio</h1>
+            <p>Web Developer | Designer | Programmer</p>
+        </div>
+    </header>
+
+    <section id="profile">
+        <div class="container">
+            <div class="profile-image">
+                <img src="https://instagram.fmnl4-3.fna.fbcdn.net/v/t1.15752-9/491373112_1173989591126154_8062339590489905385_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=0024fc&_nc_ohc=U5OI7weDziEQ7kNvwF4CYw4&_nc_oc=AdnDSxpPFSoF75JQxN5_dVuiH5qaxldNj3t83XyeR7aNV6xEogmQibCRtW7tvNE2fZBunkO5d6FJrdsXNMkKybAe&_nc_zt=23&_nc_ht=instagram.fmnl4-3.fna&oh=03_Q7cD2AHCGTFdx73O7heXEXzbtyJmqnz5I6vyC_MrBfzMb7_myQ&oe=6822E14E" alt="Lionah Rivera">
+            </div>
+           <div class="about-container">
+  <div class="profile-info">
+    <h2>About Me</h2>
+    <p>Hello, My name is Lionah Bella E. Rivera and I’m 14 years old. I’m currently studying at Golden Link College!</p>
+  </div>
+</div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>Canva</li>
+                <li>Github</li>
+                <li>Capcut</li>
+                <li>Microsoft Office</li>
+                <li>Leadership</li>
+                <li>VSCode</li>
+                <li>HTML</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <!-- Project 1 -->
+            <div class="project">
+                <div class="project-image" style="background-image: url('https://instagram.fmnl4-3.fna.fbcdn.net/v/t1.15752-9/483911635_1333467314585179_4912170600506400513_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=0024fc&_nc_ohc=xOHrDgaWF1QQ7kNvwFOJuBg&_nc_oc=AdkVpb0O_HZZGLai70D87cxhFxHuPQPPXy30lKIBb9xTWqOa3HcvWBlWXWHA5flvyfywBPwxLS_bZHadsCMehoDB&_nc_zt=23&_nc_ht=instagram.fmnl4-3.fna&oh=03_Q7cD2AGqMMoBV4fBcoyoruGsqo7aUEsgFyWVjWeB3BCsmsOCqA&oe=6822E671');"></div>
+                <h3>Output 1: My Ambitions</h3>
+                <p>This weblog is all about my ambitions, and my classmate Teyo's ambitions. I created this code during our computer subject.</p>
+                <a href="https://teyoloberes.github.io/Rivera-Loberes/Weblog.html" target="_blank">View Output</a>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project">
+                <div class="project-image" style="background-image: url('https://instagram.fmnl4-1.fna.fbcdn.net/v/t1.15752-9/483184672_1332219381416686_5394322481221418907_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=0024fc&_nc_ohc=fpxYqbNI9BgQ7kNvwF_SC9a&_nc_oc=AdknqjWLl_VxIC8VBdSQCFJkI9ZRlNhvgJXOBbp2LQ1XPgwvsj4w_PxwH_s28AXKe5eRTerOEbEDs7MGlrAi5xTB&_nc_zt=23&_nc_ht=instagram.fmnl4-1.fna&oh=03_Q7cD2AEGZtlgou435BpDo7WM1F9E_FuXCEww4MnjAmFKS_olzw&oe=6822F34A');"></div>
+                <h3>Output 2:Essential Skills and Values for Young People in the Digital Age  </h3>
+                <p>This weblog discusses a broad range of technical skills (like digital literacy, coding, data literacy, AI understanding) and personal values (like ethics, empathy, resilience, environmental awareness) that young people need to effectively navigate, contribute to, and thrive in an increasingly tech-driven world.</p>
+                <a href="https://teyoloberes.github.io/Rivera-Loberes2/Weblog%20(1).html" target="_blank">View Output</a>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project">
+                <div class="project-image" style="background-image: url('https://instagram.fmnl4-6.fna.fbcdn.net/v/t1.15752-9/490994585_9261662530611694_5962019921977428021_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=0024fc&_nc_ohc=rKf-JwzcJKkQ7kNvwG5xV-i&_nc_oc=AdmvLRVMq7RU5WuGLM3g9dEZSDDX71_eDtxYVjPtQ7wlYc2livhux3afSAF_rATw9MntVNDTRXpLYKxz66fLEePX&_nc_zt=23&_nc_ht=instagram.fmnl4-6.fna&oh=03_Q7cD2AER3jb5ut0B94TLWapE9C2bFDT6-OMaWx4BdG9Q0Bd5Jw&oe=6822E126');"></div>
+                <h3>Output 3: Favorite Foods</h3>
+                <p>This weblog is all about exploring my food likings and the things that I don't like.</p>
+                <a href="https://teyoloberes.github.io/Rivera-Loberes3/index%20(3).html" target="_blank">View Output</a>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project">
+                <div class="project-image" style="background-image: url('https://scontent.fmnl4-7.fna.fbcdn.net/v/t1.15752-9/490980724_9514925048601106_9204696397394921479_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=0024fc&_nc_ohc=gC0t_Rs9X5sQ7kNvwEUIt8W&_nc_oc=Adls9PFJ6cCvsBl1Z1EVftHwOmqcE8t11zQqWVLVrN653hNKCnEAMCHwb-PGL9wLfGEzFuJid1-82Wo3-E6Q2Yuu&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fmnl4-7.fna&oh=03_Q7cD2AH3Pj0hsLUkZyQd3LvtcH-tz5-prazwp0Bjgk8udTUYzA&oe=6822A478');"></div>
+                <h3>Output 4: English journal</h3>
+                <p>A journal in english where we summarize the stories, reflect from the story we have read.</p>
+                <a href="https://instagram.fmnl4-1.fna.fbcdn.net/v/t1.15752-9/491010701_1839467116893286_4249674413413454536_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=0024fc&_nc_ohc=1XtPPnVd7hQQ7kNvwFPVg2h&_nc_oc=Adkt-nmhFxsmUgeuO-xaGTA3H8O9qbJsw0obCZEUlPdBOROSAkNTL0GGj8O4q9D4qutDpMIVgAdhHa5m5zeRXNAM&_nc_zt=23&_nc_ht=instagram.fmnl4-1.fna&oh=03_Q7cD2AGZrGCaBO04FEfXiOMi8OlcItH2NyFZJBZjFpp32z0QEw&oe=6822C07F" target="_blank">View Output</a>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="project">
+                <div class="project-image" style="background-image: url('https://scontent.fmnl4-2.fna.fbcdn.net/v/t1.15752-9/488714842_1307845990300332_7371039046640209796_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=0024fc&_nc_ohc=Ugnhl4vAo4sQ7kNvwH7II9r&_nc_oc=AdlOdW_RNTqTaZRFpSWpRNXBvtT8KhAl0DiVEiXIz_C1WC6pje-vSeJSfb1JU1DaI9fhuQsv9JNhcZEeB2SAaoDp&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fmnl4-2.fna&oh=03_Q7cD2AE56r7WgrDXNcmkOziK5BG4ohmYr9ko9YcL_0a-AQUAOg&oe=6822AF5A');"></div>
+                <h3>Output 5: Math </h3>
+                <p>My seatworks in math in our topic SOH-CAH-TOA and Pythagorean and Missing Lengts.</p>
+                <a href="https://instagram.fmnl4-3.fna.fbcdn.net/v/t1.15752-9/488187158_1776619566248231_1893609879700076209_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=0024fc&_nc_ohc=ClJJboFexbcQ7kNvwG5ismb&_nc_oc=AdmXLeqvz6W2A2jwbGTAqk5iEC3Lq22s_0hquys-QoSVN2YFg8KrLUe3QMKw-QjBpqmNacQkFqL8qSl-Z7EPXFqH&_nc_zt=23&_nc_ht=instagram.fmnl4-3.fna&oh=03_Q7cD2AGKumzfuFZyBSeqXdfYWm6pIC2uSrrGOULDTp0BOx2suA&oe=6822B902" target="_blank">View Output</a>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="project">
+                <div class="project-image" style="background-image: url('https://instagram.fmnl4-3.fna.fbcdn.net/v/t1.15752-9/490988731_2965018297008822_4307845336272573936_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=0024fc&_nc_ohc=rGHAV-ieb8EQ7kNvwGqWMvL&_nc_oc=AdkWdicj5-BmQjtTly1_m6xtwE1qOaGtzD6ytGvucEI6xNGtincZAV2dEGROOEplBhMcZyscE_yVBjauKTQBm1ri&_nc_zt=23&_nc_ht=instagram.fmnl4-3.fna&oh=03_Q7cD2AGCHw-38PwJCzcJgvmdrzibIwcrDTNLW7agencwfvyXcg&oe=6822F965');"></div>
+                <h3>Output 6: Social Studies</h3>
+                <p>My notes and some activities in our topic: The National Economy</p>
+                <a href="https://scontent.fmnl4-1.fna.fbcdn.net/v/t1.15752-9/482537693_9281104642017924_5870262680785386863_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=0024fc&_nc_ohc=BFCevt9qnrgQ7kNvwHKQvu3&_nc_oc=Adm1myUyJw-TC5u0NGajuO_cNmCsi4hIf3AG-MPiD-oDwYY-TJ03XWQwVAY5vtJablyJQUPWKyoU5puOnpGprYju&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fmnl4-1.fna&oh=03_Q7cD2AGBEbNbwTNzmiWh7wiRg6BVqOhcL7xjPYbYbXI_ZC3eqA&oe=6822A571" target="_blank">View Output</a>
+            </div>
+
+            <!-- Project 7 -->
+            <div class="project">
+                <div class="project-image" style="background-image: url('https://scontent.fmnl4-6.fna.fbcdn.net/v/t1.15752-9/490987536_690342263344936_7623416765164203042_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=0024fc&_nc_ohc=vEYl9FC4_iMQ7kNvwEYS0Oo&_nc_oc=AdlNQPmjUA5yFIYolrJiQ2t5v0ZL7N8_qXobdokU6bOsJjS8NgsqIGGVoUjWkiZEA0duQNjH0GCMn1HBMCsUOIrZ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fmnl4-6.fna&oh=03_Q7cD2AGziorXHYUm3YNj6vBAWpAK0S51FsBLKHUW0ij9pz-GeA&oe=6822F0B7');"></div>
+                <h3>Output 7: Filipino</h3>
+                <p>My gawain in Filipino subject.</p>
+                <a href="https://instagram.fmnl4-1.fna.fbcdn.net/v/t1.15752-9/491357046_9682636398441321_3395135427328224835_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=0024fc&_nc_ohc=MtSI8o94OPYQ7kNvwGe4t1H&_nc_oc=AdmEPGpYYlV3nhQ6uzPLfoWyJqsOq5Qiy1F0PCJ9kn8AMJRz3vwmvp7twiPjX7fY18TtCAR9lJ-2GuwRYY0ZVoFi&_nc_zt=23&_nc_ht=instagram.fmnl4-1.fna&oh=03_Q7cD2AHL0QBcT7XucMEM8wMmliru-v2CR4_GtQ610TSxcBnZbQ&oe=6822BA04" target="_blank">View Output</a>
+            </div>
+
+            <!-- Project 8 -->
+            <div class="project">
+                <div class="project-image" style="background-image: url('https://scontent.fmnl4-4.fna.fbcdn.net/v/t1.15752-9/490992698_1927334178008111_6300666671298145522_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=0024fc&_nc_ohc=BBH2tgfhFYIQ7kNvwHPBGIE&_nc_oc=Adl0mJSQA0s3JqFNg2yWcFe8ZKcqmysbZQsUeaddVywhizCjaoRyMakTZjkGU5cbmwck3ZEbsNpExRJ65e8OEGcB&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fmnl4-4.fna&oh=03_Q7cD2AFRHZ49XiRLLx6x6PMmTPavYPnP_ljt4aHLTKqpQka1dg&oe=6822DEF5');"></div>
+                <h3>Output 8: Music</h3>
+                <p>Taking notes in Music.</p>
+                <a href="https://scontent.fmnl4-1.fna.fbcdn.net/v/t1.15752-9/484210536_1688532925371612_1228976174396187285_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=0024fc&_nc_ohc=uA0ufTu5MlAQ7kNvwFHYvIz&_nc_oc=AdklW63qsWR_l4LHiAZ7wydssr8_fTxpDkJcvPbUScaD5Vv5z8_ihFneMzngiSeQ_X_P2m0JU8sftafkoMwdjYTX&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fmnl4-1.fna&oh=03_Q7cD2AHmRrWrL2J9sjI6NVOZ7xj6aUENJIkSnOh30SGtd9u9VA&oe=6822C1AC" target="_blank">View Output</a>
+            </div>
+
+            <!-- Project 9 -->
+            <div class="project">
+                <div class="project-image" style="background-image: url('https://instagram.fmnl4-3.fna.fbcdn.net/v/t1.15752-9/491022526_2681828668874598_2712233313540353036_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=0024fc&_nc_ohc=eig6UGrq5fkQ7kNvwEHLS8u&_nc_oc=AdnWuqa5wExrcAMBhJSZsNuTNj4zO2CnSODVARJt1HWEfj3LGjy3aWgui0QnAmlYUEkWcv9O7IVn4FvjOU60MdvI&_nc_zt=23&_nc_ht=instagram.fmnl4-3.fna&oh=03_Q7cD2AEidSZUFHzJetZRwo5wBW2L4Oi6fPUj_9-Xf0sDnAusxA&oe=6822E5B6');"></div>
+                <h3>Output 9: Arts And Health  </h3>
+                <p>Notes in Arts and Health; all about Principle of Arts, Drugs and Communityand Environmental Health.</p>
+                <a href="https://scontent.fmnl4-1.fna.fbcdn.net/v/t1.15752-9/491348911_2546119608892041_6076313462808056391_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=0024fc&_nc_ohc=RP6m5YuanEkQ7kNvwHSxLT0&_nc_oc=AdlZcI_2WTb18RE7jT_G8h8zFs0U_b4bYIXWu4owqzS1squHmfWik2dSSTyo9foBsG1AUeygy3618h7PZALRfipH&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fmnl4-1.fna&oh=03_Q7cD2AH_p2L0aDKDVKzuGvfdBH2XxyIMrmNMeOleZrdyjoMDeg&oe=6822C41B" target="_blank">View Output</a>
+            </div>
+
+            <!-- Project 10 -->
+            <div class="project">
+                <div class="project-image" style="background-image: url('https://instagram.fmnl4-1.fna.fbcdn.net/v/t1.15752-9/490444675_1817802928952156_1656772927888950178_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=0024fc&_nc_ohc=ZXGsJaOHbEoQ7kNvwHtr_w7&_nc_oc=AdmEyH7GAr2ygsr6ZKfve9hz62UJlmWXM6rRBnigdr5eDLxn4lsb0_UYkcZ1d66teGNNp_Pi9uIHxnOzFeBEFcxJ&_nc_zt=23&_nc_ht=instagram.fmnl4-1.fna&oh=03_Q7cD2AFnqdv9FIOigKtyV_-h1kRK4pWi2rdF5E0CSfyIRxnPJA&oe=6822ECE5');"></div>
+                <h3>Output 10: TLE COOKERY</h3>
+                <p>This the appetizer me and my group made during TLE first quarter project.
+                Deviled egg appetizer 
+Ingredients:
+Egg
+Cucumber 
+Mayonnaise 
+    
+
+Ingredients of Mojos:
+Potatoes 
+Cheese
+Garlic powder
+Salt 
+Pepper</p>
+                <a href="https://instagram.fmnl4-6.fna.fbcdn.net/v/t1.15752-9/490530518_1175455157163441_3286458079011341939_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=0024fc&_nc_ohc=VMITszaK9BwQ7kNvwHzlNEA&_nc_oc=AdkTFHnw2c2ktvibUHPY-u9K50CTXRMqY3xJevz-tThMAlOWiqiSwdFVSASpnh4C0dtQ4mQMJd5HNw6ERRkWzCmM&_nc_zt=23&_nc_ht=instagram.fmnl4-6.fna&oh=03_Q7cD2AG6DY_aDMqfppwMpariXIRrfghvKijk0bU1s7sU6B9XXA&oe=6822A0BC" target="_blank">View Output</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="#">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/lbrieio/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+               </a>
+                <a href="https://www.facebook.com/lionah.bella" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="mailto:Lionahbellar@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            
+            
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Lionah Rivera. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
